@@ -1,5 +1,5 @@
 <?php require_once dirname(__FILE__) . '/../data/site.php'; ?>
-<?php $title = ($pageId === 'home') ? $siteData["siteInfo"]["name"] : $siteData["pages"][$pageId]["name"] .' | ' . $siteData["siteInfo"]["name"];?>
+<?php $title = ($pageId === 'home') ? $siteData["siteInfo"]["name"] : $siteData["pages"][$pageId]["name"] . ' | ' . $siteData["siteInfo"]["name"]; ?>
 <?php $description = $siteData["pages"][$pageId]["description"]; ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -27,25 +27,31 @@
 </head>
 
 <body>
-
   <div id="wrapper">
-    <header id="header" class="c-header">
-      <div class="inner-block">
-        <?php if ($pageId === 'home') : ?>
-          <h1><?php echo $siteData["siteInfo"]["name"]; ?></h1>
-        <?php else : ?>
-          <a href="/"><?php echo $siteData["siteInfo"]["name"]; ?></a>
-        <?php endif; ?>
-      </div><!-- /inner-block -->
-    </header>
-    <nav class="c-breadcrumb">
-      <ul>
-        <?php foreach ($siteData["pages"] as $key => $value) : ?>
-          <?php if ($key === $pageId) : ?>
-            <li class="current"><?php echo $siteData["pages"][$key]["name"]; ?></li>
+    <header id="header" class="p-header">
+      <div class="p-header__wrapper">
+        <div class="inner-block">
+          <?php if ($pageId === 'home') : ?>
+            <div class="p-header__cta-wrapper">
+              <a href="" class="p-header__tel c-header__link">
+                <img src="../img/svg/tel-white.svg" alt="tel">
+                03-3842-0633
+              </a>
+              <a href="" class="p-header__reservation c-header__link">
+                予約はこちらから
+              </a>
+              <a href="" class="p-header__instagram">
+                <img src="../img/svg/instagram.svg" alt="instagram">
+              </a>
+            </div>
           <?php else : ?>
-            <li><a href="<?php echo $siteData["pages"][$key]["slug"]; ?>"><?php echo $siteData["pages"][$key]["name"]; ?></a></li>
+            <a href="/"><?php echo $siteData["siteInfo"]["name"]; ?></a>
           <?php endif; ?>
-        <?php endforeach; ?>
-      </ul>
-    </nav>
+        </div><!-- /inner-block -->
+        <div class="p-header__hamburger">
+            <span class="bar-top">MENU</span>
+            <span class="bar-mid"></span>
+            <span class="bar-bottom"></span>
+        </div>
+      </div>
+    </header>

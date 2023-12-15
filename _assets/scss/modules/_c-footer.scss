@@ -1,13 +1,59 @@
-@use '../mixin/mixin' as *;
+@use "../mixin/mixin" as m;
+@use "../setting/setting" as s;
 
 /* --------------------------------
 c-footer
 ----------------------------------- */
-.c-footer {
-  height: 500px;
-  background-color:#0D3745;
-  color: #fff;
-  a {
-    color: inherit;
+.p-footer {
+  background: s.$footer;
+  padding: 65px 20px;
+  @include m.sp {
+    padding: 35px 20px;
   }
+  &__nav-list {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 20px;
+  }
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    @include m.sp {
+      gap: 1rem;
+    }
+  }
+  &__logo-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__logo {
+    margin-bottom: 35px;
+  }
+  &__logo-img {
+    width: 90px;
+    height: auto;
+  }
+  &__logo--lg {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    @include m.sp {
+      font-size: 20px;
+    }
+  }
+  &__logo--md {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    @include m.sp {
+      font-size: 14px;
+    }
+  }
+}
+.sp .p-footer__nav-link {
+  font-size: 12px;
 }

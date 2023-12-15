@@ -1,23 +1,21 @@
-@use '../mixin/mixin' as *;
-@use '../setting/setting' as *;
+@use "../mixin/mixin" as *;
+@use "../setting/setting" as s;
 /*------------------------------------------------------------------------------
   reset PC
 ------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600;700&display=swap");
+
 html,
 input,
 textarea,
 select,
 button {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: "Noto Serif JP", serif;
+  color: s.$black;
+  line-height: 1;
+  font-weight: s.$regular;
 }
-
 html {
-  color: #000;
-  background: #fff;
-  font-size: 16px;
-  line-height: 1.6;
   word-break: break-all;
 }
 
@@ -35,7 +33,7 @@ body {
 img {
   border: 0;
   margin: 0;
-  vertical-align: top;
+  vertical-align: bottom;
   max-width: 100%;
 }
 
@@ -47,12 +45,12 @@ p {
 }
 
 a {
-  color: #000;
+  color: s.$black;
   text-decoration: none;
-  transition: $transition01;
+  transition: s.$transition01;
   @include pc {
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }
@@ -78,7 +76,7 @@ textarea {
   resize: vertical;
 }
 
-@include placeholder(#ccc);
+@include placeholder(s.$black);
 
 button {
   border: none;
@@ -106,8 +104,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 14px;
-  font-weight: 500;
   margin: 0;
   padding: 0;
 }
@@ -116,21 +112,14 @@ main {
   display: block;
 }
 
-.inner-block {
-  position: relative;
-  max-width: 1040px;
-  padding: 0 30px;
-  box-sizing: content-box;
-  @include pc {
-    margin: 0 auto;
-  }
-}
-
 #wrapper {
   position: relative;
+  margin: 0 auto;
 }
 
-dl,dt,dd {
+dl,
+dt,
+dd {
   padding: 0;
   margin: 0;
 }
@@ -148,10 +137,9 @@ dl,dt,dd {
   a::before,
   a::after,
   button {
-    transition: $transition01;
+    transition: s.$transition01;
   }
 }
-
 
 //独自font-family読み込み
 //@font-face {
@@ -169,7 +157,6 @@ dl,dt,dd {
 //  font-display: swap;
 //}
 
-
 //SVGスプライトリセットCSS
 .c-svg {
   display: inline-block;
@@ -181,28 +168,6 @@ dl,dt,dd {
   reset SP
 ------------------------------------------------------------------------------*/
 @include sp {
-  body {
-    font-size: 14px;
-    position: relative;
-    -webkit-appearance: none;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  .inner-block {
-    padding: 0 10px;
-    width: auto;
-  }
-
-  #wrapper {
-    min-width: 320px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  input[type="submit"] {
-    -webkit-text-size-adjust: 100%;
-  }
-
   input,
   select,
   textarea {

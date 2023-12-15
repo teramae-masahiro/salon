@@ -1,10 +1,93 @@
-@use '../mixin/mixin' as *;
+@use "../mixin/mixin" as m;
+@use "../setting/setting" as s;
 
 /* --------------------------------
-c-header
+p-header
 ----------------------------------- */
-.c-header {
-  height: 140px;
-  background-color: #747474;
-  font-weight: bold;
+.p-header {
+  &__cta-wrapper {
+    right: 0;
+    position: absolute;
+    z-index: 10;
+    padding-right: 5.8%;
+    @include m.sp {
+      display: none;
+    }
+  }
+  &__tel {
+    background: s.$tealBlue;
+  }
+  &__reservation {
+    background: s.$red;
+    margin-left: 14px;
+  }
+  &__instagram {
+    margin-left: 20px;
+  }
+  &__hamburger {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    place-items: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    background: s.$gold;
+    width: 45px;
+    height: 45px;
+    display: none;
+    @include m.sp {
+      display: grid;
+      z-index: 1000;
+    }
+    &.is-open {
+      @include m.sp {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+      }
+      .bar-top {
+        display: none;
+      }
+      .bar-mid {
+        position: absolute;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease-in-out;
+        top: 36px;
+      }
+      .bar-bottom {
+        position: absolute;
+        transform: rotate(-45deg);
+        transition: transform 0.3s ease-in-out;
+        bottom: 2px;
+      }
+    }
+  }
+}
+
+//hamberger
+.bar-top,
+.bar-mid,
+.bar-bottom {
+  display: block;
+  pointer-events: none;
+}
+.bar-top {
+  color: #fff;
+  font-size: 10px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+.bar-bottom {
+  margin-bottom: 5px;
+}
+.bar-mid,
+.bar-bottom {
+  width: 40%;
+  height: 2px;
+  background: #fff;
+}
+
+.bar-top.is-open {
+  display: none;
 }

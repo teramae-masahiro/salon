@@ -3,11 +3,11 @@ $pageId = 'home';
 include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
 
 <?php if ($pageId === 'home') : ?>
-  <div class="c-wrapper">
+  <div class="wrapper">
     <div class="p-fv">
       <div class="p-fv__wrapper">
         <div class="p-fv__title-wrapper">
-          <img src="../img/common/logo.png" alt="Laviere" class="p-fv__logo">
+          <img src="../img/common/logo.png" alt="Laviere" class="p-common__logo">
           <h1 class="c-primary__title">
             <span class="c-primary__title c-primary__title--cat">あなたの人生に、</span><br>
             <span class="c-primary__title c-primary__title--main">光をPlus＋。</span>
@@ -166,29 +166,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
       </div>
     </section>
 
-    <section class="p-staff">
-      <div class="p-staff__wrapper">
-        <div class="p-staff__container">
-          <div class="p-staff__text-wrapper">
-            <div class="p-staff__text-ttl">
-              <h2 class="c-content__title--black">Meet Our Stylists</h2>
-            </div>
-            <div class="p-staff__contents">
-              <p class="p-staff__text c-content__text">
-                美のプロフェッショナルたちが、<br class="sp">あなたの髪に光をプラス。<br>
-                輝くスタイルの創造は、<br class="sp">私たちの手から始まります。
-              </p>
-            </div>
-            <div class="p-staff__link">
-              <a href="" class="c-link__btn">スタッフ紹介ページを見る</a>
-            </div>
-          </div>
-        </div>
-        <div class="p-staff__img-wrapper">
-          <img src="../img/common/content4.jpg" alt="Laviere" class="p-staff__img">
-        </div>
-      </div>
-    </section>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/inc/section-staff.php'); ?>
 
     <section class="p-recruit">
       <div class="p-recruit__wrapper">
@@ -303,69 +281,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
       </div>
     </section>
 
-    <section class="p-address">
-      <div class="p-address__wrapper">
-        <div class="p-address__container">
-          <div class="p-address__text-wrapper">
-            <table class="p-address__table">
-              <tr>
-                <th class="pc" scope="row">住所　・・・・・・</th>
-                <th class="sp" scope="row">【住所】</th>
-                <td>東京都台東区西浅草３-28-19<br>ニッケンマンション１F</td>
-              </tr>
-              <tr>
-                <th class="pc" scope="row">営業時間　・・・・</th>
-                <th class="sp" scope="row">【営業時間】</th>
-                <td>月～金/11：00～21:00　土日祝/10：00～20:00 <br>
-                  カット最終受付　45分前<br>
-                  カラー（カット込）最終受付　100分前<br>
-                  縮毛矯正最終受付　140分前</td>
-              </tr>
-              <tr>
-                <th class="pc" scope="row">定休日　・・・・・</th>
-                <th class="sp" scope="row">【定休日】</th>
-                <td>木曜と隔週で月曜</td>
-              </tr>
-              <tr>
-                <th class="pc" scope="row">支払い方法　・・・</th>
-                <th class="sp" scope="row">【支払い方法】</th>
-                <td>Visa／Mastercard／JCB／American Express <br>
-                  ※店頭で利用可能なお支払い方法を記載しています。<br>
-                  スマート支払いではご利用いただけない場合がございます。</td>
-              </tr>
-            </table>
-            <div class="p-address__link">
-              <a href="tel:03-3842-0633" class="p-address__tel">
-                <p class="p-address__text--s">
-                  お電話からのご予約
-                </p>
-                <p class="p-address__text--m">
-                  <img src="../img/svg/tel-address.svg" alt="tel" class="p-address__tel-img">
-                  03-3842-0633
-                </p>
-              </a>
-            </div>
-            <div class="p-address__link">
-              <a href="" class="p-address__tel">
-                <p class="p-address__text--s">
-                  WEBからのご予約
-                </p>
-              </a>
-            </div>
-            <div class="p-address__link">
-              <a href="" class="p-address__tel">
-                <p class="p-address__text--s">
-                  お問い合わせ
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="p-address__img-wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.16322567488342!2d139.79224286220264!3d35.717232046246195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e94df06aaab%3A0x1b08c4ca1d48b51d!2zTGF2aWVyZea1heiNie-8iOODqeODtOOCo-OCqOODvOODq--8iQ!5e0!3m2!1sja!2sjp!4v1702606078346!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/inc/section-address.php'); ?>
+
   <?php endif; ?>
   </main>
   <?php include($_SERVER['DOCUMENT_ROOT'] . '/inc/footer.php'); ?>

@@ -1,10 +1,10 @@
 <footer id="footer" class="p-footer">
   <div class="inner-block">
-    <div class="p-footer__logo">
-      <a href="/" class="p-footer__logo-link">
-        <img src="./img/common/logo.png" alt="ラヴィエール" class="p-footer__logo-img">
-        <div class="p-footer__logo-text">
-          <span class="p-footer__logo--lg">Laviere</span><br><span class="p-footer__logo--md">Hair Design</span>
+    <div class="p-common__logo">
+      <a href="/" class="p-common__logo-link">
+        <img src="../img/common/logo.png" alt="ラヴィエール" class="p-common__logo-img">
+        <div class="p-common__logo-text">
+          <span class="p-common__logo--lg">Laviere</span><br><span class="p-common__logo--md">Hair Design</span>
         </div>
       </a>
     </div>
@@ -68,12 +68,8 @@
   </div><!-- /inner-block -->
 </footer>
 
-<div id="pagetop" class="c-pagetop"><a href="#wrapper"><img src="/img/common/pagetop.png" alt="↑"></a></div>
 
 </div><!-- /wrapper -->
-
-<script src="/js/lib/svgxuse.min.js"></script>
-<script src="/js/lib/jquery-3.6.0.min.js"></script>
 <script src="/js/common.js"></script>
 </body>
 

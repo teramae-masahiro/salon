@@ -31,27 +31,82 @@
     <header id="header" class="p-header">
       <div class="p-header__wrapper">
         <div class="inner-block">
-          <?php if ($pageId === 'home') : ?>
-            <div class="p-header__cta-wrapper">
-              <a href="" class="p-header__tel c-header__link">
-                <img src="../img/svg/tel-white.svg" alt="tel">
-                03-3842-0633
-              </a>
-              <a href="" class="p-header__reservation c-header__link">
-                予約はこちらから
-              </a>
-              <a href="" class="p-header__instagram">
-                <img src="../img/svg/instagram.svg" alt="instagram">
-              </a>
+          <div class="p-header__cta-wrapper">
+            <a href="" class="p-header__tel c-header__link">
+              <img src="../img/svg/tel-white.svg" alt="tel">
+              03-3842-0633
+            </a>
+            <a href="" class="p-header__reservation c-header__link">
+              予約はこちらから
+            </a>
+            <a href="" class="p-header__instagram">
+              <img src="../img/svg/instagram.svg" alt="instagram">
+            </a>
+          </div>
+          <?php if ($pageId === 'page') : ?>
+            <div class="p-nav page">
+              <div class="p-nav__wrapper page">
+                <div class="p-common__logo">
+                  <a href="/" class="p-common__logo-link">
+                    <img src="../img/common/logo.png" alt="ラヴィエール" class="p-common__logo-img">
+                    <div class="p-common__logo-text">
+                      <span class="p-common__logo--lg">Laviere</span><br><span class="p-common__logo--md">Hair Design</span>
+                    </div>
+                  </a>
+                </div>
+                <nav class="p-nav__wrapper">
+                  <ul class="p-nav__list page">
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">TOP</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">MENU</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">店舗紹介</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">よくある質問</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">企業情報</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">採用情報</a>
+                    </li>
+                    <li class="p-nav__item">
+                      <a href="" class="p-nav__link">ブログ</a>
+                    </li>
+                    <li class="p-nav__item p-nav__item--sp">
+                      <ul class="p-nav__secondary">
+                        <li class="p-nav__item">
+                          <a href="" class="p-nav__link">
+                            <img src="../img/svg/instagram.svg" alt="instagram">
+                          </a>
+                        </li>
+                        <li class="p-nav__item p-nav__item--secondary">
+                          <a href="" class="p-nav__link p-nav__link--secondary">
+                            <img src="../img/svg/tel-sp.svg" alt="tel">
+                            03-3842-0633
+                          </a>
+                        </li>
+                        <li class="p-nav__item p-nav__item--secondary">
+                          <a href="" class="p-nav__link p-nav__link--secondary">
+                            予約はこちらから
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-          <?php else : ?>
-            <a href="/"><?php echo $siteData["siteInfo"]["name"]; ?></a>
           <?php endif; ?>
         </div><!-- /inner-block -->
         <div class="p-header__hamburger">
-            <span class="bar-top">MENU</span>
-            <span class="bar-mid"></span>
-            <span class="bar-bottom"></span>
+          <span class="bar-top">MENU</span>
+          <span class="bar-mid"></span>
+          <span class="bar-bottom"></span>
         </div>
       </div>
     </header>

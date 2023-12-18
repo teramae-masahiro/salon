@@ -5,6 +5,12 @@
 p-header
 ----------------------------------- */
 .p-header {
+  &__logo-wrapper {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
   &__cta-wrapper {
     right: 0;
     position: absolute;

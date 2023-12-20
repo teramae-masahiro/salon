@@ -46,6 +46,9 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
         <div class="p-page-feature__list">
           <div class="p-page-feature__item">
             <div class="p-page-feature__content-box">
+              <div class="p-page-feature__img-wrapper">
+                <img src="../img/common/concept1.jpg" alt="Laviere" class="p-page-feature__img">
+              </div>
               <div class="p-page-feature__text-wrapper">
                 <div class="p-page-feature__text-container">
                   <h3 class="p-page-feature__title p-page-feature__title--left">最先端TOKIOトリートメント </h3>
@@ -58,9 +61,6 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
                   </p>
                 </div>
               </div>
-              <div class="p-page-feature__img-wrapper">
-                <img src="../img/common/concept1.jpg" alt="Laviere" class="p-page-feature__img">
-              </div>
             </div>
           </div>
           <div class="p-page-feature__item p-page-feature__item--r">
@@ -71,11 +71,11 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <div class="p-page-feature__text-wrapper p-page-feature__text-wrapper--r">
                 <div class="p-page-feature__text-container p-page-feature__text-container--r">
                   <h3 class="p-page-feature__title p-page-feature__title--right">美髪トリートメント</h3>
-                  <p class="p-page-feature__text c-content__text">
+                  <p class="p-page-feature__text p-page-feature__text--right c-content__text">
                     2ステップのトリートメントで、乾燥や広がり、<br>
                     パサつきに悩む方におすすめです。
                   </p>
-                  <p class="p-page-feature__text c-content__text">
+                  <p class="p-page-feature__text p-page-feature__text--right c-content__text">
                     リニューアルにより、ブースター効果と<br>
                     補修・保湿成分が増量され、まとまりと香りを提供します。
                   </p>
@@ -85,6 +85,9 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
           </div>
           <div class="p-page-feature__item">
             <div class="p-page-feature__content-box">
+              <div class="p-page-feature__img-wrapper">
+                <img src="../img/common/concept3.jpg" alt="Laviere" class="p-page-feature__img">
+              </div>
               <div class="p-page-feature__text-wrapper">
                 <div class="p-page-feature__text-container">
                   <h3 class="p-page-feature__title p-page-feature__title--left">さらさらハホニコトリートメント </h3>
@@ -92,12 +95,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
                     水分、油分、タンパク質のバランスを絶妙に構築し、<br>
                     ダメージ毛でもさらさら感を持続させます。<br>
                     ハリ、コシ、ツヤを求める方に適しています。
-
                   </p>
                 </div>
-              </div>
-              <div class="p-page-feature__img-wrapper">
-                <img src="../img/common/concept3.jpg" alt="Laviere" class="p-page-feature__img">
               </div>
             </div>
           </div>
@@ -109,7 +108,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <div class="p-page-feature__text-wrapper p-page-feature__text-wrapper--r">
                 <div class="p-page-feature__text-container p-page-feature__text-container--r">
                   <h3 class="p-page-feature__title p-page-feature__title--right">超音波アイロン</h3>
-                  <p class="p-page-feature__text c-content__text">
+                  <p class="p-page-feature__text p-page-feature__text--right c-content__text">
                     トリートメント剤を細分化し、<br>
                     浸透を促進するために超音波振動を使用します。<br>
                     トリートメントメニューに追加料金600円で利用可能です。

@@ -50,19 +50,19 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <dl class="p-page-staff__profile c-content__text">
                 <dt class="p-page-staff__text-title">スタイリスト歴</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;12年
+                  <span class="pc"><span class="pc">・・・</span></span> &emsp;12年
                 </dd>
                 <dt class="p-page-staff__text-title">得意なイメージ</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・&emsp; モ テ・愛され
+                  <span class="pc"><span class="pc">・・・</span></span>&emsp; モ テ・愛され
                 </dd>
                 <dt class="p-page-staff__text-title">得意な技術</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;大人かわいいスタイル<br>・・・ &emsp;メンズヘア 縮毛矯正 デジタルパーマ
+                  <span class="pc"><span class="pc">・・・</span></span> &emsp;大人かわいいスタイル<br><span class="pc"><span class="pc">・・・</span></span> &emsp;メンズヘア 縮毛矯正 デジタルパーマ
                 </dd>
                 <dt class="p-page-staff__text-title">趣味・マイブーム</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;カメラ撮影 サッカー スノボー
+                  <span class="pc"><span class="pc">・・・</span></span> &emsp;カメラ撮影 サッカー スノボー
                 </dd>
               </dl>
             </div>
@@ -86,15 +86,15 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <dl class="p-page-staff__profile c-content__text">
                 <dt class="p-page-staff__text-title">スタイリスト歴</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;7年
+                  <span class="pc">・・・</span> &emsp;7年
                 </dd>
                 <dt class="p-page-staff__text-title">得意なイメージ</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・&emsp; モ テ・愛され
+                  <span class="pc">・・・</span>&emsp; モ テ・愛され
                 </dd>
                 <dt class="p-page-staff__text-title">得意な技術</dt>
                 <dd class="p-page-staff__text-content">
-                  <span class="p-page-staff__dots">・・・</span>
+                  <span class="p-page-staff__dots"><span class="pc">・・・</span></span>
                   <div class="p-page-staff__comment">
                     メンズカット、ソフトモヒカンなど<br>
                     刈り上げやツーブロックが得意！<br>
@@ -125,19 +125,19 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <dl class="p-page-staff__profile c-content__text">
                 <dt class="p-page-staff__text-title">スタイリスト歴</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;9年
+                  <span class="pc">・・・</span> &emsp;9年
                 </dd>
                 <dt class="p-page-staff__text-title">得意なイメージ</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・&emsp; ナチュラル
+                  <span class="pc">・・・</span>&emsp; ナチュラル
                 </dd>
                 <dt class="p-page-staff__text-title">得意な技術</dt>
                 <dd class="p-page-staff__text-content">
-                  <span class="p-page-staff__dots">・・・</span>
+                  <span class="p-page-staff__dots"><span class="pc">・・・</span></span>
                   <div class="p-page-staff__comment">
                     お顔周りレイヤー<br>
-                    ミディアムからロングヘアのシャギー風を<br>
-                    ショート、ボブ、外ハネスタイルや<br>
+                    ミディアムからロングヘアのシャギー風を
+                    ショート、ボブ、外ハネスタイルや
                     オトナ可愛くスタイリングしやすく仕上げます！<br>
                     ちいさなお子さまカットも大歓迎です☆
                   </div>
@@ -163,15 +163,15 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <dl class="p-page-staff__profile c-content__text">
                 <dt class="p-page-staff__text-title">スタイリスト歴</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;6年
+                  <span class="pc">・・・</span> &emsp;6年
                 </dd>
                 <dt class="p-page-staff__text-title">得意なイメージ</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・&emsp; ナチュラル
+                  <span class="pc">・・・</span>&emsp; ナチュラル
                 </dd>
                 <dt class="p-page-staff__text-title">得意な技術</dt>
                 <dd class="p-page-staff__text-content">
-                  <span class="p-page-staff__dots">・・・</span>
+                  <span class="p-page-staff__dots"><span class="pc">・・・</span></span>
                   <div class="p-page-staff__comment">
                     ショートスタイル、ボブスタイルが得意です。<br>
                     ロングからショートへのイメチェンもお任せ下さい♪
@@ -179,7 +179,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
                 </dd>
                 <dt class="p-page-staff__text-title">趣味・マイブーム</dt>
                 <dd class="p-page-staff__text-content">
-                  <span class="p-page-staff__dots">・・・</span>
+                  <span class="p-page-staff__dots"><span class="pc">・・・</span></span>
                   <div class="p-page-staff__comment">
                     スイーツ、パン、コーヒー、そして猫が好きです。<br>
                     最近はキャンプ、DIY、庭作りにもハマってます。<br>
@@ -212,15 +212,15 @@ include($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php'); ?>
               <dl class="p-page-staff__profile c-content__text">
                 <dt class="p-page-staff__text-title">スタイリスト歴</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・ &emsp;7年
+                  <span class="pc">・・・</span> &emsp;7年
                 </dd>
                 <dt class="p-page-staff__text-title">得意なイメージ</dt>
                 <dd class="p-page-staff__text-content">
-                  ・・・&emsp; ナチュラル
+                  <span class="pc">・・・</span>&emsp; ナチュラル
                 </dd>
                 <dt class="p-page-staff__text-title">得意な技術</dt>
                 <dd class="p-page-staff__text-content">
-                  <span class="p-page-staff__dots">・・・</span>
+                  <span class="p-page-staff__dots"><span class="pc">・・・</span></span>
                   <div class="p-page-staff__comment">
                     ショートヘア、デジタルパーマ得意です☆<br>
                     なんでもご相談ください！！

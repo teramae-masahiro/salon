@@ -68,8 +68,8 @@
   </div><!-- /inner-block -->
 </footer>
 
-
 </div><!-- /wrapper -->
+<script src="/js/lib/gsap.min.js"></script>
 <script src="/js/common.js"></script>
 </body>
 
